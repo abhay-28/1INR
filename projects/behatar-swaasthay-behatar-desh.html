@@ -1,0 +1,513 @@
+<!doctype html>
+<html lang="en">
+
+<!-- Mirrored from test.oneinr.com/projects/behatar-swaasthay-behatar-desh by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 16 Nov 2021 06:16:56 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>One INR</title>
+	<meta http-equiv="cache-control" content="no-cache" />
+	<meta name="csrf-token" content="MDAkBkwD35JRaAwO43hek3HWACIqZRD6kU3A8QGN">
+
+	<!-- Style CSS -->
+	<link rel="stylesheet" type="text/css" href="../css/animate.css" />
+	<link rel="stylesheet" type="text/css" href="../css/font-awesome.min.css" />
+	<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css" />
+	<link rel="stylesheet" type="text/css" href="../css/ionicons.min.css" />
+	<link rel="stylesheet" type="text/css" href="../css/owl.carousel.css" />
+	<link rel="stylesheet" type="text/css" href="../css/owl.theme.default.css" />
+	<link rel="stylesheet" type="text/css" href="../css/owl.theme.min.css" />
+	<link rel="stylesheet" type="text/css" href="../css/owl.transitions.min.css" />
+	<link rel="stylesheet" type="text/css" href="../css/carousel.min.css" />
+	<link rel="stylesheet" type="text/css" href="../css/jquery.bxslider.min.css" />
+	<link rel="stylesheet" type="text/css" href="../css/magicsuggest-min.css" />
+	<link rel="stylesheet" type="text/css" href="../css/quill.bubble.css" />
+	<link rel="stylesheet" type="text/css" href="../css/quill.core.css" />
+	<link rel="stylesheet" type="text/css" href="../css/quill.snow.css" />
+	<link rel="stylesheet" type="text/css" href="../css/style.css" />
+	
+	<link rel="stylesheet" type="text/css" href="../css/responsive.css" />
+	<link rel="stylesheet" type="text/css" href="../../cdn.datatables.net/1.10.19/css/dataTables.bootstrap4.min.css">
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-155080358-2"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-155080358-2');
+	</script>
+
+	<link href="../css/admin/sweetalert.css" rel="stylesheet"/>
+	<style type="text/css">
+		input::-webkit-calendar-picker-indicator {
+			display: none;
+		}
+	</style>
+
+	
+		<link rel="icon" href="../images/one-inr_old.png" type="image/x-icon"/>
+			</head>
+
+	<body>
+		<div id="wrapper">
+			<header id="header" class="site-header">
+				<div class="container">
+					<div class="site-brand">
+						<a href="../index.html"><img src="../images/one-inr.png" alt="" style="width: 160px"></a>
+					</div><!-- .site-brand -->
+					<div class="right-header">					
+						<nav class="main-menu">
+							<button class="c-hamburger c-hamburger--htx"><span></span></button>
+							<ul>
+								<li>
+									<a href="../index.html">Home<i class="fa fa-caret-down" aria-hidden="true"></i></a>
+									
+								</li>
+								<li>
+									<a href="../about-us.html">About Us<i class="fa fa-caret-down" aria-hidden="true"></i></a>
+								</li>
+								<li>
+									<a href="../projects.html">Campaigns<i class="fa fa-caret-down" aria-hidden="true"></i></a>
+									
+								</li>
+								
+								
+								
+								
+								<li><a href="../contact.html">Contact</a></li>
+																</ul>
+							</nav><!-- .main-menu -->
+							<div class="search-icon" id="searchEl">
+								<a href="#" id="searchIco" class="ion-ios-search-strong" onclick="vm.search=''"></a>
+								<div class="form-search"></div>
+								<form action="https://test.oneinr.com/projects/result" id="searchForm" style="top:20%; max-width: 450px;">
+									<input id="searchInput" list="hints" type="text" name="search" placeholder="Search..." v-model='search'  />
+									<datalist id="hints">
+										<option v-bind:value="hint" v-for="hint in hints">
+										</datalist>
+										
+										
+										
+											
+										</form>
+										
+										
+
+														</div>	
+
+																												<div class="login login-button">
+															<a href="../login.html" class="btn-primary">Login</a>
+														</div>
+																												<!-- .login -->
+													</div><!--. right-header -->
+												</div><!-- .container -->
+											</header><!-- .site-header -->
+
+											<main id="main" class="site-main">
+												<!-- Modal -->
+<style>
+	#campaign p span{
+		font-size:14pt !important;
+	}
+
+</style>
+<div id="signInModal" class="modal fade" role="dialog">
+	<div class="modal-dialog">
+		<!-- Modal content-->
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal">&times;</button>
+				<h4 class="modal-title"></h4>
+			</div>
+			<div class="modal-body">
+				<div class="container">
+					<div class="main-content">
+						<div class="form-login">
+							<h2>Log in with your account</h2>
+							<form action="https://test.oneinr.com/login" method="POST" id="loginForm" class="clearfix">
+								<input type="hidden" name="_token" value="MDAkBkwD35JRaAwO43hek3HWACIqZRD6kU3A8QGN">								<div class="field">
+									
+									<input id="email" type="email" class="form-control" placeholder="E-Mail Address" name="email" value="" required autofocus>
+																		
+								</div>
+								<div class="field">
+									
+									<input id="password" type="password" class="form-control" name="password" placeholder="Password" required>
+																	</div>
+								<div class="inline clearfix">
+									<button type="submit" value="Send Messager" class="btn-primary">Login</button>
+									<p>Not a member yet? <a href="../register.html">Register Now</a></p>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+	</div>
+</div>
+
+
+
+
+
+	
+	<div class="container">
+		
+		<div class="breadcrumbs" style="display: inline-flex; margin-bottom: 25px;">
+			
+				<a href="../index.html">Home &nbsp;</a><span> / </span>&nbsp; Behatar Swaasthay, Behatar Desh
+			
+			</div><!-- .breadcrumbs -->
+		</div>
+		
+		<div class="campaign-content">
+			<div class="container">
+				<div class="campaign">
+					<div class="campaign-item clearfix">
+						<div class="campaign-image">
+							<div id="owl-campaign" class="campaign-slider">
+								
+								
+								
+																								<div class="item">
+									<img src="../uploads/cD2VamSm5NW0Y2mPCUoPLM7zJWEO2YZ93p4CrWbZ.jpg" alt="">
+								</div>
+																<div class="item">
+									<img src="../uploads/FfK85c0zbsAqEKY45w4NSV2j5W2zeDdI9W2S7AEz.jpg" alt="">
+								</div>
+																<div class="item">
+									<img src="../uploads/ujtu1pQOADuMWlcBqE40v3KteG03KcNst7NdlALs.jpg" alt="">
+								</div>
+																<div class="item">
+									<img src="../uploads/gHkJVYHRerCEMNi533PnkqGb7Io8sXyVkpUi88WM.jpg" alt="">
+								</div>
+																<div class="item">
+									<img src="../uploads/JEHy9s8zkAvbl7JahrsTEb5aMwfRsQJ0dmgBM1up.jpg" alt="">
+								</div>
+																<div class="item">
+									<img src="../uploads/nEW9QxlZHkgv1mprY13EZd8WQ6D0Wg43mKHhdLAD.jpg" alt="">
+								</div>
+																							</div>
+						</div>
+						<div class="campaign-box">
+							
+							
+							
+							<h3>Behatar Swaasthay, Behatar Desh</h3>
+							<div class="campaign-description"><p>This program focuses on giving early access to nutrition for the needy during the COVID-19 outbreak by serving meals with Roti Bank.</p></div>
+							<div class="campaign-author clearfix">
+								<div class="author-profile">
+									<a class="author-icon" >
+																					<img src="../uploads/BR1TntCzbUCP0BGpaceRnTykvvCPCsozBO343CT7.png" alt="">
+																			</a>
+										by 
+										
+										Pyaribai Girdharilal Ranka Foundation
+									
+								</div>
+								
+							</div>
+							<div class="process">
+								<div class="raised">
+									
+									<span style="width: 0%"></span>
+								</div>
+								<div class="process-info">
+									<div class="process-funded">
+										<span><i class="fa fa-inr" aria-hidden="true"></i> 504</span>Goal</div>
+										<div class="process-pledged"><span><i class="fa fa-inr" aria-hidden="true"></i> 0</span>Funded</div>
+										
+										<div class="process-time">
+											<span>1</span>
+										Days Left</div>
+									</div>
+								</div>
+								<div class="button">
+																			<button type="button" class="btn-primary" data-toggle="modal" data-target="#signInModal">Donate Now</button>
+																				<br>
+																			
+									
+								</div>
+								
+							</div>
+						</div>
+					</div>
+				</div>
+				</div><!-- .campaign-content -->
+				<div class="campaign-history">
+					<div class="container">
+						<div class="row">
+							<div class="col-lg-8">
+								<div class="campaign-tabs">
+									<ul class="tabs-controls">
+																				<li class="active" data-tab="campaign"><a href="#">Campaign Story</a></li>
+																				
+										
+										
+																				<li class="" data-tab="comment"><a href="#">Comments</a></li>
+									</ul>
+									<div class="campaign-content" style="text-align: justify" >
+										<div id="campaign" class="tabs active">
+											<p dir="ltr" style="line-height: 1.38; text-align: justify; margin-top: 0pt; margin-bottom: 0pt;"><span style="font-size: 8.5pt; font-family: Verdana; background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; vertical-align: baseline; white-space: pre-wrap;">We at 1INR wish to carry on the tradition of selfless giving- </span><span style="font-size: 8.5pt; font-family: Verdana; background-color: transparent; font-weight: bold; font-variant-numeric: normal; font-variant-east-asian: normal; vertical-align: baseline; white-space: pre-wrap;">a desire to serve the poor ones</span><span style="font-size: 8.5pt; font-family: Verdana; background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; vertical-align: baseline; white-space: pre-wrap;"> during COVID-19. We started off by distributing breakfast, meals, fruits, pulses and more accessible to children in hospital with Roti Bank and Team Hunger of Lions Club of Millennials and Lions Club of Churchgate. With our campaign- Behatar Swaasthay, Behatar Desh we wish to do more to support underprivileged patients facing challenges and their caregivers, beyond our prayers.</span></p>
+<p>&nbsp;</p>
+<p dir="ltr" style="line-height: 1.38; text-align: justify; margin-top: 0pt; margin-bottom: 0pt;"><span style="font-size: 8.5pt; font-family: Verdana; background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; vertical-align: baseline; white-space: pre-wrap;">There are so many families who do not have access to food or afford a one-time meal, which is the basic necessity and leads to poor nutrition to fight the disease. Many underprivileged children in several locations decide to stay hungry to save money. Addressing such issues, </span><span style="font-size: 8.5pt; font-family: Verdana; background-color: transparent; font-weight: bold; font-variant-numeric: normal; font-variant-east-asian: normal; vertical-align: baseline; white-space: pre-wrap;">1INR serves free meals, fruits</span><span style="font-size: 8.5pt; font-family: Verdana; background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; vertical-align: baseline; white-space: pre-wrap;"> and more to poor children and families of underprivileged patients in the Government Hospital. You can also join our team during the food distribution drive.&nbsp;</span></p>
+<p>&nbsp;</p>
+<p dir="ltr" style="line-height: 1.38; text-align: justify; margin-top: 0pt; margin-bottom: 0pt;"><span style="font-size: 8.5pt; font-family: Verdana; background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; vertical-align: baseline; white-space: pre-wrap;">We cover </span><span style="font-size: 8.5pt; font-family: Verdana; background-color: transparent; font-weight: bold; font-variant-numeric: normal; font-variant-east-asian: normal; vertical-align: baseline; white-space: pre-wrap;">a broader aim of addressing hunger needs</span><span style="font-size: 8.5pt; font-family: Verdana; background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; vertical-align: baseline; white-space: pre-wrap;">. Towards this guiding principle is the belief that every home of a poor is served by us. The provider of succor to those who are hungry, because every meal counts! Your donation in this initiative will also go to our second ongoing initiative which is Pehli Roti Dayitva Ki. You don&rsquo;t have to Cook and Serve but just have to Pay for a Meal to bless the needy people with food.</span></p>
+<p dir="ltr" style="line-height: 1.38; text-align: justify; margin-top: 8pt; margin-bottom: 8pt;">&nbsp;</p>
+<p dir="ltr" style="line-height: 1.38; text-align: justify; margin-top: 8pt; margin-bottom: 8pt;"><span style="font-size: 8.5pt; font-family: Verdana; background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; vertical-align: baseline; white-space: pre-wrap;">We, at 1INR, with your </span><span style="font-size: 8.5pt; font-family: Verdana; background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; vertical-align: baseline; white-space: pre-wrap;">su</span><span style="font-size: 8.5pt; font-family: Verdana; background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; vertical-align: baseline; white-space: pre-wrap;">pport in </span><span style="font-size: 8.5pt; font-family: Verdana; background-color: transparent; font-weight: bold; font-variant-numeric: normal; font-variant-east-asian: normal; vertical-align: baseline; white-space: pre-wrap;">Behatar Swaasthay, Behatar Desh campaign</span><span style="font-size: 8.5pt; font-family: Verdana; background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; vertical-align: baseline; white-space: pre-wrap;"> make sure that your support reaches the needy children. Through 1INR, they'll receive proper meals, attention from medical staff and stay hunger-free. But this is only possible with the emergency funds we receive from you for giving them a 2 times meal.</span></p>
+<p style="text-align: justify;">&nbsp;</p>
+<p style="text-align: justify;"><span style="background-color: transparent; font-size: 8.5pt; font-family: Verdana; font-variant-numeric: normal; font-variant-east-asian: normal; vertical-align: baseline; white-space: pre-wrap;">We would appreciate a helping hand and making this aim a success. Your small contribution will support </span><span style="background-color: transparent; font-size: 8.5pt; font-family: Verdana; font-weight: bold; font-variant-numeric: normal; font-variant-east-asian: normal; vertical-align: baseline; white-space: pre-wrap;">Behatar Swaasthay, Behatar Desh with a donation of as low as 1INR</span><span style="background-color: transparent; font-size: 8.5pt; font-family: Verdana; font-variant-numeric: normal; font-variant-east-asian: normal; vertical-align: baseline; white-space: pre-wrap;"> and help them sustain their livelihood.&nbsp; </span>&nbsp;</p>
+										</div>
+										
+										
+										
+										<div id="comment" class="tabs comment-area ">
+											
+																						<ol class="comments-list" style="margin-top: 100px;">
+												
+																							
+										</ol>
+										<div id="respond" class="comment-respond">
+											
+																																	
+										</div>
+									</div>
+								</div>
+								</div><!-- .main-content -->
+								<!-- .sidebar -->
+								</div>
+							</div>
+							</div><!-- .campaign-history -->
+							
+																		</main><!-- .site-main -->
+
+											<footer id="footer" class="site-footer">
+												<div class="footer-menu">
+													<div class="container">
+														<div class="row">
+															<div class="col-lg-4 col-sm-4 col-4">
+																<div class="footer-menu-item">
+																	<h3>Our company</h3>
+																	<ul>
+																		
+																		<li><a href="../about-us.html">About us</a></li>
+																		<li><a href="../how-it-works.html">How It Works</a></li>
+																		<li><a href="../what-is-this.html">What Is This</a></li>
+																		<li><a href="../contact.html">Contact Us</a></li>
+																		
+																	</ul>
+																</div>
+															</div>
+															<div class="col-lg-4 col-sm-4 col-4">
+																<div class="footer-menu-item">
+																	<h3>Campaign</h3>
+																	<ul>
+																		<li><a href="../start-your-campaign.html">Start Your Campaign</a></li>
+																		
+									<!-- <li><a href="https://test.oneinr.com/campaign-support">Campaign Support</a></li>
+									<li><a href="https://test.oneinr.com/trust-and-safety">Trust &amp; Safety</a></li>
+									<li><a href="https://test.oneinr.com/support">Support</a></li> -->
+									<li><a href="../projects.html">Donate to a cause</a></li>
+									<li><a href="../terms-of-use.html">Terms of Use</a></li>
+									<li><a href="../privacy-policy.html">Privacy Policy</a></li>
+								</ul>
+							</div>
+						</div>
+						
+						<div class="col-lg-3 col-sm-12 col-12">
+							<div class="footer-menu-item newsletter">
+								<h3>Newsletter</h3>
+<!-- 								<div class="newsletter-description">Private, secure, spam-free</div>
+-->							<form action="https://test.oneinr.com/subscibed" method="POST" id="newsletterForm">
+	<input type="email" value="" name="email" placeholder="Enter your email..." />
+	<input type="hidden" name="_token" value="MDAkBkwD35JRaAwO43hek3HWACIqZRD6kU3A8QGN">
+		<div class="g-recaptcha" data-sitekey="6LeW4rQUAAAAACPWgFID3rAFSAxr7ClLTpBjvgF8"></div>
+		
+	
+	<button type="submit" value=""><span class="ion-android-drafts"></span></button>
+</form>
+
+							  	<!-- <div class="follow">
+							  		<h3>Follow us</h3>
+							  		<ul>
+							  			<li class="facebook"><a target="_Blank" href="http://www.facebook.com"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+							  			<li class="twitter"><a target="_Blank" href="http://www.twitter.com"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+							  			<li class="instagram"><a target="_Blank" href="http://www.instagram.com"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+							  			<li class="google"><a target="_Blank" href="http://www.google.com"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+							  			<li class="youtube"><a target="_Blank" href="http://www.youtube.com"><i class="fa fa-youtube" aria-hidden="true"></i></a></li>
+							  		</ul>
+							  	</div> -->
+							  </div>
+							</div>
+							
+						</div>
+					</div>
+				</div>
+
+				<!-- .footer-menu -->
+				<div class="footer-copyright">
+					<div class="container">
+						<p class="copyright">2018 by One INR. All Rights Reserved.</p>
+						<a href="#" class="back-top">Back to top<span class="ion-android-arrow-up"></span></a>
+					</div>
+				</div>
+			</footer><!-- site-footer -->
+		</div><!-- #wrapper -->
+		<!-- jQuery -->    
+		<script src="../js/jquery-1.12.4.min.js"></script>
+		<script src="../js/popper.js"></script>
+		<script src="../js/bootstrap.min.js"></script>
+		<script src="../js/owl.carousel.min.js"></script>
+		<script src="../js/carousel.min.js"></script>
+		<script src="../js/jquery.countdown.min.js"></script>
+		<script src="../js/wow.min.js"></script>
+		<script src="../js/isotope.pkgd.min.js"></script>
+		<script src="../js/jquery.bxslider.min.js"></script>
+		<script src="../js/magicsuggest-min.js"></script>
+		<script src="../js/quill.core.js"></script>
+		<script src="../js/quill.js"></script>
+		<!-- orther script -->
+		<script src="../js/main.js"></script>
+		
+		<script src="../../cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+		<script src="../js/admin/sweetalert.min.js"></script>
+
+									<script type="text/javascript">
+								$('body').addClass('campaign-detail');
+								$('#pledgeNow').click(function(e){
+									swal({
+								title: "Are you sure?",
+								text: "You want to donate!",
+								type: "warning",
+								showCancelButton: true,
+								confirmButtonColor: "#DD6B55",
+								confirmButtonText: "Yes!",
+								cancelButtonText: "No!",
+								closeOnConfirm: false,
+								closeOnCancel: false
+								}, function(isConfirm) {
+								if (isConfirm) {
+								$('#priceForm').submit();
+								// swal("Deleted!", "Your imaginary file has been deleted.", "success");
+								} else {
+								swal.close();
+								// swal("Cancelled", "Your imaginary file is safe :)", "error");
+								}
+								});
+								});
+								$(document).ready(function(){
+																																																					});
+							</script>
+									
+
+		<script>
+			
+			$.ajaxSetup({
+				headers: {
+					'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+				}
+			});
+			$(document).ready(function(){
+				$("form, input").attr('autocomplete', 'off');
+
+				$('img').on('error', function(){
+					$(this).attr('src','../uploads/no-image.png');
+				});
+			});
+			
+			function validate(evt) {
+				var theEvent = evt || window.event;
+				var key = theEvent.keyCode || theEvent.which;
+				key = String.fromCharCode( key );
+				var regex = /[0-9]|\./;
+				if( !regex.test(key) ) {
+					theEvent.returnValue = false;
+					if(theEvent.preventDefault) theEvent.preventDefault();
+				}
+			}
+
+			$('#searchIco').click(function(){
+				$('#searchForm input').val(null);
+			});
+
+
+			vm = new Vue({
+				el:'#searchEl',
+				data:{
+					search: '',
+					hints: [],
+					searchLength: 4,
+				},
+				methods:{
+				// hint: function(){
+				// 	val = this.search;
+				// 	if(val.length >= 4){
+				// 		// var hints = [];
+				// 		// this.hints = hints;
+				// 		$.ajax({
+				// 			url: 'https://test.oneinr.com/search-hints',
+				// 			type:'post',
+				// 			data:{search:this.search},
+				// 			success: function(res){
+				// 				// this.hints = res;
+				// 				// this.hints = [3,4];
+				// 				// hints = [3,4];
+				// 				// this.hints = [3,4];
+				// 				vm.hints = JSON.parse(res);
+				// 				// console.log(this.hints);
+				// 				// console.log(res);
+				// 			},
+				// 			error:function(error){
+				// 				// console.log(error);
+				// 			}
+				// 		});
+				// 	}
+				// }
+			},
+			watch:{
+				search: function($value){
+					// console.log(this.searchLength);
+					if($value.length >= 4){
+
+						// console.log(length);
+						// var hints = [];
+						// this.hints = hints;
+						$.ajax({
+							url: 'https://test.oneinr.com/search-hints',
+							type:'post',
+							data:{search:this.search},
+							success: function(res){
+								// this.hints = res;
+								// this.hints = [3,4];
+								// hints = [3,4];
+								// this.hints = [3,4];
+								vm.hints = JSON.parse(res);
+								console.log(vm.searchLength);
+								console.log(vm.search.length);
+								if(vm.search.length - vm.searchLength > 1 || vm.search.length - vm.searchLength == 0){
+									vm.hints = [];
+								}
+								vm.searchLength = vm.search.length
+
+
+								// console.log(this.hints);
+								// console.log(res);
+							},
+							error:function(error){
+								// console.log(error);
+							}
+						});
+					}
+				}
+			}
+		});
+	</script>
+
+</body>
+
+<!-- Mirrored from test.oneinr.com/projects/behatar-swaasthay-behatar-desh by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 16 Nov 2021 06:18:02 GMT -->
+</html>
